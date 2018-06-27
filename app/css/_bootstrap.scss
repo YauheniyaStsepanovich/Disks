@@ -1,0 +1,136 @@
+/*
+  BASE COLORS
+*/
+$color_black: #000000;
+$color_white: #ffffff;
+$color_gray_light: #e3e4e4;
+$color_gray: #95989a;
+$color_gray_dark: #859191;
+$color_gray_darker: #4e4e4e;
+$color_red: #e30613;
+$color_red_darker: #df0d2f;
+
+/*
+  BASE FONTS
+*/
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SegoeUI.woff') format('woff'),
+  url('../fonts/SegoeUI.ttf') format('truetype'),
+  url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$font-family-sans-serif:      "Segoe UI", sans-serif;
+$font-family-base:            $font-family-sans-serif;
+
+$font-size-base: 1rem; // 16px
+$font-sz-md: #{$font-size-base * 18/16};
+$font-sz-lg: #{$font-size-base * 20/16};
+$font-sz-xl: #{$font-size-base * 30/16};
+$font-sz-xxl: #{$font-size-base * 80/16};
+
+$line-ht-md: #{$font-size-base * 18/16 * 1.6};
+$line-ht-lg: #{$font-size-base * 20/16 * 1.6};
+$line-ht-xl: #{$font-size-base * 30/16 * 1.6};
+$line-ht-xxl: #{$font-size-base * 80/16 * 1.6};
+
+
+
+
+/////////////////////////////////////////////////////////////////
+
+$background-text: $color_gray_dark;
+$background-item: rgba($color_gray_dark, 0.8);
+$background-icon: $color_gray_light;
+$border-form-color: rgba($color_gray, 0.8);
+$border-form-btn-color: $color_red_darker;
+$form-input-text-color: $color_gray_dark;
+$form-button-text-color: $color_gray_darker;
+$white-color: $color_white;
+$background-third-header: $color_gray_dark;
+
+////////////////////////////////////////////////////////////////
+$gray: $color_gray;
+$gray-text: $color_gray_darker;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 812px,
+        lg: 992px,
+        xl: 1200px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        //xl: 1140px
+        xl: 1400px
+);
+
+$body-color: $gray-text;
+
+
+$red: $color_red;
+$primary: $color_red;
+
+$navbar-brand-font-size: $font-size-base;
+$navbar-padding-y: 15px;
+$navbar-padding-x: 30px;
+
+$dropdown-border-radius: 0;
+$dropdown-link-hover-color: $color_white;
+$dropdown-link-hover-bg: $color_red;
+$dropdown-item-padding-y: 0.5rem;
+
+$btn-border-radius: 0;
+$btn-padding-y: 18px;
+$btn-padding-x: 70px;
+$btn-border-width: 4px;
+$btn-font-weight: bold;
+
+$input-border-radius: 0;
+$input-padding-y: 0.75rem;
+$input-padding-x: 1rem;
+$input-placeholder-color: $color_gray;
+$input-height: 3rem;
+
+$custom-select-indicator: url(../img/icons/icon-right-sm.png);
+$custom-select-border-radius: 0;
+$custom-select-focus-border-color: $gray-text;
+$custom-select-focus-box-shadow: none;
+$custom-select-bg-size: 10px 15px;
+
+$border-radius:               0;
+$border-radius-lg:            0;
+$border-radius-sm:            0;
+
+
+
+/* SWEETALERT */
+// CONFIRM BUTTON
+$swal2-confirm-button-border: 0;
+$swal2-confirm-button-border-radius: 0;
+$swal2-confirm-button-background-color: $color_red;
+$swal2-confirm-button-color: $color_white;
+$swal2-confirm-button-font-size: $font-size-base;
+// CANCEL BUTTON
+$swal2-cancel-button-border: 0;
+$swal2-cancel-button-border-radius: 0;
+$swal2-cancel-button-background-color: $color_gray_light;
+$swal2-cancel-button-color: $color_white;
+$swal2-cancel-button-font-size: $font-size-base;
+
+// Подключение нужных SCSS исходников Bootstrap 4
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+//@import "../../node_modules/bootstrap/scss/dropdown";
+//@import "../../node_modules/bootstrap/scss/custom-forms";
+//@import "../../node_modules/bootstrap/scss/nav";
+//@import "../../node_modules/bootstrap/scss/navbar";

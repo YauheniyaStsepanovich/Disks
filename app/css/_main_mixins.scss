@@ -1,0 +1,75 @@
+//$grid-breakpoints: (
+//        xs: 0,
+//        sm: 576px,
+//        md: 768px,
+//        lg: 992px,
+//        xl: 1200px
+//) !default;
+
+@mixin descktop($breakpoints: $grid-breakpoints) {
+  $minW: breakpoint-min(xl, $breakpoints);
+  @media (min-width: $minW) and (orientation: landscape) {
+  /* descktop */
+  @content;
+  }
+}
+
+@mixin tablet-portrait($breakpoints: $grid-breakpoints) {
+  $minW: breakpoint-min(sm, $breakpoints);
+  $minH: breakpoint-min(md, $breakpoints);
+  $maxW: breakpoint-min(md, $breakpoints);
+  $maxH: breakpoint-min(xl, $breakpoints);
+  @media (min-width: $minW) and (max-width: $maxW) and (min-height: $minH) and (orientation: portrait) {
+  /* tablet-portrait */
+  @content;
+  }
+}
+
+@mixin tablet-landscape($breakpoints: $grid-breakpoints) {
+  $minW: breakpoint-min(md, $breakpoints);
+  $minH: breakpoint-min(sm, $breakpoints);
+  $maxW: breakpoint-min(xl, $breakpoints);
+  $maxH: breakpoint-min(md, $breakpoints);
+  @media (min-width: $minW) and (max-width: $maxW) and (min-height: $minH) and (max-height: $maxH) and (orientation: landscape) {
+  /* tablet-landscape */
+  @content;
+  }
+}
+
+@mixin tablet-all($breakpoints: $grid-breakpoints) {
+  $minW: breakpoint-min(md, $breakpoints);
+  $minH: breakpoint-min(sm, $breakpoints);
+  $maxW: breakpoint-min(xl, $breakpoints);
+  $maxH: breakpoint-min(md, $breakpoints);
+  @media (min-width: $minW) and (max-width: $maxW) and (min-height: $minH) and (max-height: $maxH) and (orientation: landscape),
+  (min-width: $minH) and (max-width: $maxH) and (min-height: $minW) and (max-height: $maxW) and (orientation: portrait) {
+  /* tablet-all */
+  @content;
+  }
+}
+
+@mixin mobile-portrait($breakpoints: $grid-breakpoints) {
+  $maxW: breakpoint-min(sm, $breakpoints);
+  $maxH: breakpoint-min(md, $breakpoints);
+  @media (max-width: $maxW) and (max-height: $maxH) and (orientation: portrait) {
+  /* mobile-portrait */
+  @content;
+  }
+}
+
+@mixin mobile-landscape($breakpoints: $grid-breakpoints) {
+  $maxW: breakpoint-min(md, $breakpoints);
+  $maxH: breakpoint-min(sm, $breakpoints);
+  @media (max-width: $maxW) and (max-height: $maxH) and (orientation: landscape) {
+  /* mobile-landscape */
+  @content;
+  }
+}
+@mixin mobile-all($breakpoints: $grid-breakpoints) {
+  $maxW: breakpoint-min(md, $breakpoints);
+  $maxH: breakpoint-min(sm, $breakpoints);
+  @media (max-width: $maxW) and (max-height: $maxH) and (orientation: landscape), (max-width: $maxH) and (max-height: $maxW) and (orientation: portrait) {
+  /* mobile-all */
+  @content;
+  }
+}
