@@ -1,79 +1,68 @@
-<nav class="navbar navbar-expand-xl bg-white">
-    <a class="navbar-brand" href="index.html">
-        <img class="img-fluid" src="img/logo_de.png">
-    </a>
+<nav class="navbar navbar-expand-xl bg-white row">
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
-            aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation">
-        <svg width="28" height="28">
-            <use xlink:href="#icon-nav-toggle"></use>
-        </svg>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">
-
-                    <span class="d-inline-block">Главная</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="catalog.html">Каталог</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tipykuhon.html">Типы кухонь</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="9categories.html">9 ценовых категорий</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="vstraivaemaya-tehnika.html">Встраиваемая техника</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    nobilia
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="nav-item"><a class="nav-link" href="nobilia.html">О nobilia</a></li>
-                    <li class="nav-item"><a class="nav-link" href="history.html">История компании</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kompetencyi.html">Компетенции и факты</a></li>
-                    <li class="nav-item"><a class="nav-link" href="napolnenie-shkafov.html">Наполнение шкафов</a></li>
-                    <li class="nav-item"><a class="nav-link" href="ergonomica.html">Эргономика</a></li>
-                    <li class="nav-item"><a class="nav-link" href="systema-sveta.html">Системы освещения</a></li>
-                    <li class="nav-item"><a class="nav-link" href="videocatalog.html">Видео коллекция</a></li>
-                    <li class="nav-item"><a class="nav-link" href="designers.html">Дизайнеры и архитекторы</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Избранное</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Sale</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="navbar__search">
-        <a data-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false"
-           aria-controls="searchCollapse">
-            <svg width="24" height="24">
-                <use xlink:href="#icon-search"></use>
-            </svg>
-        </a>
-    </div>
-
-    <div class="navbar__contacts">
-        <a class="navbar__contacts__phone text-dark d-block mb-2" href="tel:+7 (863) 299-44-53">+7 (863) 299-44-53</a>
-        <span class="navbar__contacts__location small">Красноармейская 103/123</span>
-    </div>
-
-    <div id="searchCollapse" class="collapse navbar-search-collapse">
-        <div class="container py-4">
-            <div class="input-group">
-                <input id="q" name="q" class="form-control" placeholder="Найти...">
-                <div class="input-group-append">
-                    <button class="btn btn-sm btn-outline-primary" type="submit">Найти</button>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-3">
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid" src="img/logo.png">
+                    </a>
+                </div>
+                <div class="col-9 align-self-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="price.html">Цены</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galery.html">Галерея</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+
+
         </div>
-    </div>
+
+        <div class="col-6">
+            <div class="row">
+                <div class="col-11">
+                    <div class="d-flex flex-column">
+
+                        <div class="lead">
+                            <span class="navbar__contacts__location">Санкт-Петербург, Митрофаньевское шоссе, д.27</span>
+                        </div>
+
+                        <div class="tel">
+
+                            <a class="navbar__contacts__phone" href="tel:+7 (812) 972-06-66">+7 (812) 972-0-666</a>
+
+                            <a class="navbar__contacts__phone" href="tel:+7 (812) 970-79-58">+7 (812) 970-7-958</a>
+
+                            <a class="navbar__call small" href="#">Перезвони мне</a>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-1 align-self-center">
+                        <a class="icons" href="#">
+                            <svg><use xlink:href="#icon_instagram"></use></svg>
+                        </a>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
 </nav>
